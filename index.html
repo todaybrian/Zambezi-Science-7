@@ -16,6 +16,47 @@
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href="./assets/css/demo.css" rel="stylesheet" />
     <link href="./assets/css/animate.css" rel="stylesheet" />
+	<style>
+		.gallery {
+    width: 1060px;
+    margin: 0 auto;
+    padding: 5px;
+    background: #000;
+    box-shadow: 0 1px 2px rgba(0,0,0,.3);
+  }
+
+  .gallery > div {
+    position: relative;
+    float: left;
+    padding: 5px;
+  }
+
+  .gallery > div > img {
+    display: block;
+    width: 200px;
+    transition: .1s transform;
+    transform: translateZ(0); /* hack */
+  }
+
+  .gallery > div:hover {
+    z-index: 1;
+  }
+
+  .gallery > div:hover > img {
+    transform: scale(1.7,1.7);
+    transition: .3s transform;
+  }
+
+  .cf:before, .cf:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+
+  .cf:after {
+    clear: both;
+  }
+	</style>
 </head>
 
 <body class="index-page sidebar-collapse">
@@ -116,8 +157,8 @@
 			<br>
 			<br>
 			<br>
-					<p class="h3 wow flip">Animals and Plants in Zambezi River</p>
-					<p class="h4 wow flip">Fish</p>
+					<p class="h3 wow flip"><b>Animals and Plants in Zambezi River</b></p>
+					<p class="h4 wow flip"><b>Fish</b></p>
 					<div class="row">
 						<div class="col-md-6 col-sm-12">
 							<p>There are a lot of fish in the river. It holds a lot of wildlife. The fish you would expect to see in the Zambezi River are: Upper Zambezi Yellowfish, African Pike and Silver Barbel</p>
@@ -125,6 +166,9 @@
 						<div class="col-md-6 col-sm-12">
 							<img src="./assets/img/17024496_fc59454e39_b.jpg" style="width:100%">
 						</div>
+					</div>
+					<div class="row">
+						
 					</div>
 			<p class="h3 wow flip" id="abioticRiver"><b>Abiotic Factors:</b></p>
 					<p class="h5 wow zoomInLeft"><b>Air</b></p>
