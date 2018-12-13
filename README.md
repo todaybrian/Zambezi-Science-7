@@ -1,2 +1,2 @@
-# Science-project
-This is my science project, deal with it or else.
+# Zambezi Science Project
+This is my Grade 7 ecosystem project.
